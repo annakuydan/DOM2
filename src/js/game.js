@@ -8,7 +8,7 @@ export default class Game {
         this.lost = document.getElementById('lost');
         this.count = null;
         this.board = new Board();
-        this.goblin = new Goblin(this.board.returnGameBoard());
+        this.goblin = new Goblin(this.board.displayGameBoard());
         this.intervalId = null;
     }
 
