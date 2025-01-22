@@ -4,8 +4,8 @@ export default class Board {
     }
 
     createGameBoard() {    /* создаем игровую доску */
-        for (i = 0; i < 4; i += 1) {
-            for (j = 0; j < 4; j += 1) {
+        for (let i = 0; i < 4; i += 1) {
+            for (let j = 0; j < 4; j += 1) {
                 const cell = document.createElement('div'); /* создаем элемент с помощью метода */
                 cell.classList.add('cell'); /* добавляем новый класс */
                 this.gameBoard.appendChild(cell); /* вставляем элемент cell в конец доски */

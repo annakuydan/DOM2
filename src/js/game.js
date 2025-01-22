@@ -1,4 +1,4 @@
-import Board from './board';
+import Board from './Board';
 import Goblin from './exitGoblin';
 
 export default class Game {
@@ -7,7 +7,7 @@ export default class Game {
         this.dead = document.getElementById('dead');
         this.lost = document.getElementById('lost');
         this.count = null;
-        this.board = newBoard();
+        this.board = new Board();
         this.goblin = new Goblin(this.board.returnGameBoard());
         this.intervalId = null;
     }
