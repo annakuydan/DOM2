@@ -1,4 +1,4 @@
-import Board from './Board';
+import Board from './board';
 import Goblin from './exitGoblin';
 
 export default class Game {
