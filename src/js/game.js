@@ -20,7 +20,7 @@ export default class Game {
         this.startInterval();
     }
 
-    startInterval() { /* работа интервала */
+    startInterval() { 
         this.intervalId = setInterval(() => {
             this.goblin.addImg();
             this.lost.textContent = +this.lost.textContent + this.count;
@@ -32,7 +32,7 @@ export default class Game {
     }
 
     stopInterval() {
-        clearInterval(this.intervalId); /* остановка интервала */
+        clearInterval(this.intervalId); 
     }
 
     onCellClick() {
@@ -40,7 +40,7 @@ export default class Game {
         for(let i = 0; i < cell.length; i += 1 ) {
             cell[i].addEventListener('click', () => {
                 const img = cell[i].querySelector('img');
-                if(img) { /* проверяем, что изображение гоблина находится в ячейке */
+                if(img) { 
                     cell[i].removeChild(img);
                     this.dead.textContent = +this.dead.textContent + 1;
                 } else {
@@ -52,7 +52,7 @@ export default class Game {
         }
     }
 
-    onButtonClick() { /* выскакивание рамки С начала */
+    onButtonClick() { 
         const resetButton = document.querySelector('.reset');
         resetButton.addEventListener('click', () => {
             if(!this.modalEl.classList.contains('hidden')) {
@@ -65,7 +65,7 @@ export default class Game {
         });
     }
 
-    clearGameBoard() { /* очистка таблицы */
+    clearGameBoard() { 
         while (this.board.gameBoard.firstChild) {
             this.board.gameBoard.removeChild(this.board.gameBoard.firstChild);
         }

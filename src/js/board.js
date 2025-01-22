@@ -1,19 +1,19 @@
 export default class Board {
     constructor() {
-        this.gameBoard = document.querySelector('.game-board'); /* переменная содержит ссылку на элемент с классом game-board */
+        this.gameBoard = document.querySelector('.game-board'); 
     }
 
-    createGameBoard() {    /* создаем игровую доску */
+    createGameBoard() {   
         for (let i = 0; i < 4; i += 1) {
             for (let j = 0; j < 4; j += 1) {
-                const cell = document.createElement('div'); /* создаем элемент с помощью метода */
-                cell.classList.add('cell'); /* добавляем новый класс */
-                this.gameBoard.appendChild(cell); /* вставляем элемент cell в конец доски */
+                const cell = document.createElement('div');
+                cell.classList.add('cell'); 
+                this.gameBoard.appendChild(cell); 
             }
         }
     }
 
-    displayGameBoard() {   /* вывод доски */
+    displayGameBoard() {   
         return this.gameBoard;
     }
 }
