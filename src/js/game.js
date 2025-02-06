@@ -88,7 +88,7 @@ export default class Game {
     }
 
     showWinner() {
-        const header = this.modalEl.getElementsByTagName('h2')[0];
+        const header = this.modalEl.getElementsByTagName('h2')[1];
         header.textContent = status;
         this.modalEl.classList.remove('hidden');
         this.reset();
