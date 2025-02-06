@@ -1,6 +1,6 @@
 import Game from './game';
 
-document.addEventListener('DOMContentLoaded' ,() => {
+document.addEventListener('DOMContentLoaded' , () => {
     const gameStart = new Game();
     gameStart.startGame();
 })
