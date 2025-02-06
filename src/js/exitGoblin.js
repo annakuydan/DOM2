@@ -19,7 +19,7 @@ export default class Goblin {
         goblin.setAttribute('src', image);
         cells.forEach((cell) => {
             const img = cell.querySelector('img');
-            if (img && img.parentNode === cell); {
+            if (img && img.parentNode === cell) {
                 img.remove(); 
             }
         });
