@@ -1,6 +1,8 @@
-import Game from './game';
+import Gui from './Gui';
+import Logic from './Logic';
 
-document.addEventListener('DOMContentLoaded' , () => {
-    const gameStart = new Game();
-    gameStart.startGame();
-})
+const gui = new Gui();
+gui.init();
+const logic = new Logic(gui);
+logic.init();
+
