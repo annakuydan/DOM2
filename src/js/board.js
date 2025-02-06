@@ -13,7 +13,7 @@ export default class Board {
         }
     }
 
-    displayGameBoard() {   
+    returnGameBoard() {   
         return this.gameBoard;
     }
 }
